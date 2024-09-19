@@ -34,7 +34,7 @@ export default function CalendarSection() {
           <div className='flex flex-col gap-y-2 mb-12'>
             <h1 className='text-3xl font-bold'>Usage</h1>
             <a href='https://ui.shadcn.com/docs/components/calendar' target='_blank' className='hover:underline flex gap-x-1'>Original reference from the official Shadcn/UI documentation <ArrowUpRight /> </a>
-            <div className='flex items-center justify-center h-full border-2 border-black w-full'>
+            <div className='flex items-center justify-center h-full border w-full'>
               <CalendarCodeUsageSnippet />
             </div>
           </div>

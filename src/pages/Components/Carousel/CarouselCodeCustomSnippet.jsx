@@ -164,7 +164,7 @@ const CarouselCodeCustomSnippet = () => {
         ref={ref}
         variant={variant}
         size={size}
-        className={cn("absolute  h-8 w-8 rounded-full border-2 border-black shadow-[1px_1px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]", orientation === "horizontal"
+        className={cn("absolute  h-8 w-8 rounded-full border shadow-[1px_1px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]", orientation === "horizontal"
           ? "-left-12 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
         disabled={!canScrollPrev}
@@ -185,7 +185,7 @@ const CarouselCodeCustomSnippet = () => {
         ref={ref}
         variant={variant}
         size={size}
-        className={cn("absolute h-8 w-8 rounded-full border-2 border-black shadow-[1px_1px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]", orientation === "horizontal"
+        className={cn("absolute h-8 w-8 rounded-full border shadow-[1px_1px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]", orientation === "horizontal"
           ? "-right-12 top-1/2 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
         disabled={!canScrollNext}
@@ -205,7 +205,7 @@ const CarouselCodeCustomSnippet = () => {
 
   return (
     <div className="p-2 bg-gray-100 w-full text-xs">
-      <pre className="whitespace-pre-wrap bg-yellow-200 p-4 rounded-lg border border-gray-300">
+      <pre className="whitespace-pre-wrap ">
         {code}
       </pre>
       <CopyToClipboard text={code} onCopy={() => setCopied(true)}>

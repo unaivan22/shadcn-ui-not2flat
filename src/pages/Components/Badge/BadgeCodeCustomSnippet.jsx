@@ -11,7 +11,7 @@ const BadgeCodeCustomSnippet = () => {
   import { cn } from "@/lib/utils"
 
   const badgeVariants = cva(
-    "inline-flex items-center rounded-full border-2 border-black px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+    "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
     {
       variants: {
         variant: {
@@ -44,7 +44,7 @@ const BadgeCodeCustomSnippet = () => {
 
   return (
     <div className="p-2 bg-gray-100 w-full text-xs">
-      <pre className="whitespace-pre-wrap bg-yellow-200 p-4 rounded-lg border border-gray-300">
+      <pre className="whitespace-pre-wrap ">
         {code}
       </pre>
       <CopyToClipboard text={code} onCopy={() => setCopied(true)}>

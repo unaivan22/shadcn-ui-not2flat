@@ -80,7 +80,9 @@
 
 .active{
   color: black;
-  font-weight: 800;
+  font-weight: 700;
+  background-color: rgb(231, 231, 231);
+  border-radius: 8px;
 }
 
 /* Hide the scrollbar */

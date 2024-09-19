@@ -17,7 +17,7 @@ const CheckboxCodeCustomSnippet = () => {
     <CheckboxPrimitive.Root
       ref={ref}
       className={cn(
-        "peer h-5 w-5 shrink-0 border-2 border-black shadow-[2px_2px_0px_rgba(0,0,0,1)] ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground",
+        "peer h-5 w-5 shrink-0 border shadow-[2px_2px_0px_rgba(0,0,0,1)] ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground",
         className
       )}
       {...props}>
@@ -34,7 +34,7 @@ const CheckboxCodeCustomSnippet = () => {
 
   return (
     <div className="p-2 bg-gray-100 w-full text-xs">
-      <pre className="whitespace-pre-wrap bg-yellow-200 p-4 rounded-lg border border-gray-300">
+      <pre className="whitespace-pre-wrap ">
         {code}
       </pre>
       <CopyToClipboard text={code} onCopy={() => setCopied(true)}>

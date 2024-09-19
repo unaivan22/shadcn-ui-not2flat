@@ -27,14 +27,14 @@ export default function SliderSection() {
           <div className='flex flex-col gap-y-2 mb-12'>
             <h1 className='text-3xl font-bold'>Custom</h1>
             <p className=''>Go to components/ui/slider.jsx or .tsx and replace with this code </p>
-            <div className='flex items-center justify-center h-full border-2 border-black w-full'>
+            <div className='flex items-center justify-center h-full border w-full'>
               <SliderCodeCustomSnippet />
             </div>
           </div>
           <div className='flex flex-col gap-y-2 mb-12'>
             <h1 className='text-3xl font-bold'>Usage</h1>
             <a href='https://ui.shadcn.com/docs/components/slider' target='_blank' className='hover:underline flex gap-x-1'>Original reference from the official Shadcn/UI documentation <ArrowUpRight /></a>
-            <div className='flex items-center justify-center h-full border-2 border-black w-full'>
+            <div className='flex items-center justify-center h-full border w-full'>
               <SliderCodeUsageSnippet />
             </div>
           </div>

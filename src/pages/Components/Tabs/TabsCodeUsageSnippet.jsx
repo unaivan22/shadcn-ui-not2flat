@@ -84,7 +84,7 @@ const TabsCodeUsageSnippet = () => {
 
   return (
     <div className="p-2 bg-gray-100 w-full text-xs">
-      <pre className="whitespace-pre-wrap bg-yellow-200 p-4 rounded-lg border border-gray-300">
+      <pre className="whitespace-pre-wrap ">
         {code}
       </pre>
       <CopyToClipboard text={code} onCopy={() => setCopied(true)}>

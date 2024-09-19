@@ -149,14 +149,14 @@ export default function DrawerSection() {
           <div className='flex flex-col gap-y-2 mb-12'>
             <h1 className='text-3xl font-bold'>Custom</h1>
             <p className=''>Go to components/ui/drawer.jsx or .tsx and replace with this code </p>
-            <div className='flex items-center justify-center h-full border-2 border-black w-full'>
+            <div className='flex items-center justify-center h-full border w-full'>
               <DrawerCodeCustomSnippet />
             </div>
           </div>
           <div className='flex flex-col gap-y-2 mb-12'>
             <h1 className='text-3xl font-bold'>Usage</h1>
             <a href='https://ui.shadcn.com/docs/components/drawer' target='_blank' className='hover:underline flex gap-x-1'>Original reference from the official Shadcn/UI documentation <ArrowUpRight /> </a>
-            <div className='flex items-center justify-center h-full border-2 border-black w-full'>
+            <div className='flex items-center justify-center h-full border w-full'>
               <DrawerCodeUsageSnippet />
             </div>
           </div>

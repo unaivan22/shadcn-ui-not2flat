@@ -41,7 +41,7 @@ const ComboboxCodeCustomSnippet = () => {
   }
 
   const CommandInput = React.forwardRef(({ className, ...props }, ref) => (
-    <div className="flex items-center border-2 border-black px-3" cmdk-input-wrapper="">
+    <div className="flex items-center border px-3" cmdk-input-wrapper="">
       <Search className="mr-2 h-4 w-4 shrink-0 opacity-50" />
       <CommandPrimitive.Input
         ref={ref}
@@ -65,7 +65,7 @@ const ComboboxCodeCustomSnippet = () => {
   CommandList.displayName = CommandPrimitive.List.displayName
 
   const CommandEmpty = React.forwardRef((props, ref) => (
-    <CommandPrimitive.Empty ref={ref} className="py-6 text-center text-sm border-2 border-black" {...props} />
+    <CommandPrimitive.Empty ref={ref} className="py-6 text-center text-sm border" {...props} />
   ))
 
   CommandEmpty.displayName = CommandPrimitive.Empty.displayName
@@ -74,7 +74,7 @@ const ComboboxCodeCustomSnippet = () => {
     <CommandPrimitive.Group
       ref={ref}
       className={cn(
-        "overflow-hidden p-1 border-2 border-black text-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground",
+        "overflow-hidden p-1 border text-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground",
         className
       )}
       {...props} />
@@ -91,7 +91,7 @@ const ComboboxCodeCustomSnippet = () => {
     <CommandPrimitive.Item
       ref={ref}
       className={cn(
-        "relative flex border-2 border-black cursor-default select-none items-center px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected=true]:bg-violet-200 data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50",
+        "relative flex border cursor-default select-none items-center px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected=true]:bg-violet-200 data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50",
         className
       )}
       {...props} />
@@ -127,7 +127,7 @@ const ComboboxCodeCustomSnippet = () => {
 
   return (
     <div className="p-2 bg-gray-100 w-full text-xs">
-      <pre className="whitespace-pre-wrap bg-yellow-200 p-4 rounded-lg border border-gray-300">
+      <pre className="whitespace-pre-wrap ">
         {code}
       </pre>
       <CopyToClipboard text={code} onCopy={() => setCopied(true)}>

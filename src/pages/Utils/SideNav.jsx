@@ -11,11 +11,11 @@ export default function SideNav() {
       };
     
       return (
-        <div className='flex flex-col pl-10 pr-6 py-4 h-[96vh] overflow-y-scroll pb-12 gap-y-1'>
-            <a className="font-medium block flex gap-x-2 items-center border-2 border-black rounded-full px-4 py-2 w-fit my-4 md:hidden text-gray-600 hover:text-white hover:bg-black dark:text-neutral-400 dark:hover:text-neutral-500" href="https://github.com/unaivan22/shadcn-ui-brutalism" target="_blank" rel="noopener noreferrer"> <Github /> Github</a>
+        <div className='flex flex-col px-6 py-4 h-[96vh] overflow-y-scroll pb-12 gap-y-1 bg-stone-50'>
+            <a className="font-medium block flex gap-x-2 items-center border px-4 py-2 w-fit my-4 md:hidden text-gray-600 hover:text-white hover:bg-black dark:text-neutral-400 dark:hover:text-neutral-500" href="https://github.com/unaivan22/shadcn-ui-brutalism" target="_blank" rel="noopener noreferrer"> <Github /> Github</a>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/"
                 activeClassName="active" 
             >
@@ -23,7 +23,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/installation"
                 activeClassName="active" 
             >
@@ -31,7 +31,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/accordion"
                 activeClassName="active" 
             >
@@ -39,7 +39,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/alert"
                 activeClassName="active" 
             >
@@ -47,7 +47,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/alert-dialog"
                 activeClassName="active" 
             >
@@ -55,7 +55,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/badge"
                 activeClassName="active" 
             >
@@ -63,7 +63,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/button"
                 activeClassName="active" 
             >
@@ -71,7 +71,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/calendar"
                 activeClassName="active" 
             >
@@ -79,7 +79,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/card"
                 activeClassName="active" 
             >
@@ -87,7 +87,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/carousel"
                 activeClassName="active" 
             >
@@ -95,7 +95,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/checkbox"
                 activeClassName="active" 
             >
@@ -103,7 +103,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/combobox"
                 activeClassName="active" 
             >
@@ -111,7 +111,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/command"
                 activeClassName="active" 
             >
@@ -119,7 +119,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/date-picker"
                 activeClassName="active" 
             >
@@ -127,7 +127,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/dialog"
                 activeClassName="active" 
             >
@@ -135,7 +135,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/drawer"
                 activeClassName="active" 
             >
@@ -143,7 +143,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/dropdown-menu"
                 activeClassName="active" 
             >
@@ -151,7 +151,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/hover-card"
                 activeClassName="active" 
             >
@@ -159,7 +159,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/input"
                 activeClassName="active" 
             >
@@ -167,7 +167,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/input-otp"
                 activeClassName="active" 
             >
@@ -175,7 +175,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/menubar"
                 activeClassName="active" 
             >
@@ -183,7 +183,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/navigation-menu"
                 activeClassName="active" 
             >
@@ -191,7 +191,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/pagination"
                 activeClassName="active" 
             >
@@ -199,7 +199,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/popover"
                 activeClassName="active" 
             >
@@ -207,7 +207,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/progress"
                 activeClassName="active" 
             >
@@ -215,7 +215,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/radio-group"
                 activeClassName="active" 
             >
@@ -223,7 +223,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/select"
                 activeClassName="active" 
             >
@@ -231,7 +231,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/slider"
                 activeClassName="active" 
             >
@@ -239,7 +239,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/switch"
                 activeClassName="active" 
             >
@@ -247,7 +247,7 @@ export default function SideNav() {
             </NavLink>
             <NavLink
                 exact
-                className='rounded-full py-[.3rem] text-sm font-light opacity-70'
+                className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/tabs"
                 activeClassName="active" 
             >

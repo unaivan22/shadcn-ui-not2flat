@@ -35,7 +35,7 @@ const InputOTPCodeCustomSnippet = () => {
       (<div
         ref={ref}
         className={cn(
-          "relative flex h-10 w-10 items-center justify-center border-2 border-black text-sm transition-all bg-primary shadow-[2px_2px_0px_rgba(0,0,0,1)]",
+          "relative flex h-10 w-10 items-center justify-center border text-sm transition-all bg-primary shadow-[2px_2px_0px_rgba(0,0,0,1)]",
           isActive && "z-10 ring-2 ring-ring ring-offset-background",
           className
         )}
@@ -65,7 +65,7 @@ const InputOTPCodeCustomSnippet = () => {
 
   return (
     <div className="p-2 bg-gray-100 w-full text-xs">
-      <pre className="whitespace-pre-wrap bg-yellow-200 p-4 rounded-lg border border-gray-300">
+      <pre className="whitespace-pre-wrap ">
         {code}
       </pre>
       <CopyToClipboard text={code} onCopy={() => setCopied(true)}>
