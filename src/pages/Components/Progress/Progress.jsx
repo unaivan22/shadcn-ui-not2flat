@@ -18,7 +18,7 @@ export default function ProgressSection() {
       <div className='container mx-auto px-0 md:px-24 mt-12'>
           <div className='flex flex-col gap-y-2 mb-12'>
             <h1 className='text-3xl font-bold'>Preview</h1>
-            <div className='flex items-center justify-center h-[60vh] border-2 border-black bg-lime-200 w-full px-12'>
+            <div className='flex items-center justify-center h-[60vh] border w-full px-12'>
               <Progress value={progress} className="w-[60%]" />
             </div>
           </div>

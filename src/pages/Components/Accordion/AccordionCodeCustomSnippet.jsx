@@ -9,14 +9,14 @@ const AccordionCodeCustomSnippet = () => {
 
   import * as React from "react"
   import * as AccordionPrimitive from "@radix-ui/react-accordion"
-  import { ChevronDown } from "lucide-react"
+  import { ChevronDown, Plus } from "lucide-react"
 
   import { cn } from "@/lib/utils"
 
   const Accordion = AccordionPrimitive.Root
 
   const AccordionItem = React.forwardRef(({ className, ...props }, ref) => (
-    <AccordionPrimitive.Item ref={ref} className={cn("shadow-[4px_4px_0px_rgba(0,0,0,1)] border-2 border-black px-4", className)} {...props} />
+    <AccordionPrimitive.Item ref={ref} className={cn("bg-muted px-4 py-1 rounded-2xl mb-2", className)} {...props} />
   ))
   AccordionItem.displayName = "AccordionItem"
 
@@ -25,12 +25,12 @@ const AccordionCodeCustomSnippet = () => {
       <AccordionPrimitive.Trigger
         ref={ref}
         className={cn(
-          "flex flex-1 items-center justify-between py-4 font-bold text-lg transition-all hover:underline [&[data-state=open]>svg]:rotate-180",
+          "flex flex-1 items-center justify-between py-3 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-[45deg]",
           className
         )}
         {...props}>
         {children}
-        <ChevronDown className="h-4 w-4 shrink-0 transition-transform duration-200" />
+        <Plus className="h-4 w-4 shrink-0 transition-transform duration-200" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   ))
@@ -39,16 +39,15 @@ const AccordionCodeCustomSnippet = () => {
   const AccordionContent = React.forwardRef(({ className, children, ...props }, ref) => (
     <AccordionPrimitive.Content
       ref={ref}
-      className="border-t-2 border-black pl-4 overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+      className="overflow-hidden opacity-60 text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
       {...props}>
-      <div className={cn("pb-4 pt-4", className)}>{children}</div>
+      <div className={cn("pb-2 pt-0", className)}>{children}</div>
     </AccordionPrimitive.Content>
   ))
 
   AccordionContent.displayName = AccordionPrimitive.Content.displayName
 
   export { Accordion, AccordionItem, AccordionTrigger, AccordionContent }
-
 
   `;
 

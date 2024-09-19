@@ -29,7 +29,7 @@ export default function TabsSection() {
       <div className='container mx-auto px-0 md:px-24 mt-12'>
           <div className='flex flex-col gap-y-2 mb-12'>
             <h1 className='text-3xl font-bold'>Preview</h1>
-            <div className='flex items-center justify-center h-[80vh] border-2 border-black bg-lime-200 w-full px-12'>
+            <div className='flex items-center justify-center h-[80vh] w-full px-12'>
               <Tabs defaultValue="account" className="w-[400px]">
                 <TabsList className="grid w-full grid-cols-2">
                   <TabsTrigger value="account">Account</TabsTrigger>
