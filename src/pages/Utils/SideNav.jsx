@@ -12,15 +12,15 @@ export default function SideNav() {
     
       return (
         <div className='flex flex-col px-6 py-4 h-[96vh] overflow-y-scroll pb-12 gap-y-1 bg-stone-50'>
-            <a className="font-medium block flex gap-x-2 items-center border px-4 py-2 w-fit my-4 md:hidden text-gray-600 hover:text-white hover:bg-black dark:text-neutral-400 dark:hover:text-neutral-500" href="https://github.com/unaivan22/shadcn-ui-brutalism" target="_blank" rel="noopener noreferrer"> <Github /> Github</a>
-            <NavLink
+            <a className="font-medium block flex gap-x-2 items-center border px-4 py-2 w-fit my-4 md:hidden text-gray-600 hover:text-white hover:bg-black dark:text-neutral-400 dark:hover:text-neutral-500" href="https://github.com/unaivan22/shadcn-ui-not2flat" target="_blank" rel="noopener noreferrer"> <Github /> Github</a>
+            {/* <NavLink
                 exact
                 className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'
                 to="/"
                 activeClassName="active" 
             >
                 Home
-            </NavLink>
+            </NavLink> */}
             <NavLink
                 exact
                 className='py-[.5rem] pl-[.8rem] text-sm font-light opacity-70 rounded-xs'

@@ -37,7 +37,7 @@ export default function RouterPage() {
   return (
     <Router>
         <Routes>
-            <Route path='/' element={<Home/>} />
+            <Route path='/' element={<Installation/>} />
 
             <Route path='/introduction' element={<Introduction/>} />
             <Route path='/installation' element={<Installation/>} />

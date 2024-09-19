@@ -29,7 +29,7 @@ const Layout = ({ className, children }) => {
             </div>
             <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
               <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-                <a className="font-medium text-gray-600 flex items-center gap-x-2 hover:text-black dark:text-neutral-300 dark:hover:text-neutral-300" href="https://github.com/unaivan22/shadcn-ui-brutalism" target="_blank" rel="noopener noreferrer"> <Github /> Github</a>
+                <a className="font-medium text-gray-600 flex items-center gap-x-2 hover:text-black dark:text-neutral-300 dark:hover:text-neutral-300" href="https://github.com/unaivan22/shadcn-ui-not2flat" target="_blank" rel="noopener noreferrer"> <Github /> Github</a>
               </div>
             </div>
           </nav>
