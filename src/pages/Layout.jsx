@@ -53,7 +53,7 @@ const Layout = ({ className, children }) => {
 
       <div className="p-4 sm:ml-52 mt-14 min-h-screen">
         <div className={className}>{children}</div>
-        <div className='flex items-center justify-between px-4 mt-8 mb-4'>
+        <div className='flex items-center justify-between px-4 mt-32 mb-4'>
           <a href='/'>Shadcn/ui Not2Flat</a>
           <a href='https://dinivannendra.xyz/' target='_blank' rel="noopener noreferrer">2024 - <span className='underline'>Unaivan</span></a>
         </div>

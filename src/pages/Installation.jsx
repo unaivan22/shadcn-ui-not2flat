@@ -12,7 +12,7 @@ export default function Installation() {
             <div className='my-12'>
                 <p className='font-semibold text-xl'>Changelog</p>
                 <div className='mt-6'>
-                    <span className="font-medium text-sm font-mono mb-3">Version 1.0 <span className='text-xs'>(19 Sept 2024)</span></span>
+                    <span className="font-medium text-sm font-mono mb-3">Version 1.0 <span className='text-xs'>(24 Sept 2024)</span></span>
                     <ul className="list-disc list-inside text-slate-900 dark:text-slate-200">
                     <li>First release</li>
                     <li>28 components available</li>

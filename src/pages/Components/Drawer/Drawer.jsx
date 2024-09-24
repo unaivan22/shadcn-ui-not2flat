@@ -1,11 +1,11 @@
 "use client"
  
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Layout from '../../Layout'
-import { ArrowUpRight, CalendarCheck, Minus, MinusCircle, Plus, PlusCircle} from "lucide-react"
-import DrawerCodeCustomSnippet from './DrawerCodeCustomSnippet';
-import DrawerCodeUsageSnippet from './DrawerCodeUsageSnippet';
+import { ArrowUpRight, Copy, Minus, MinusCircle, Plus, PlusCircle} from "lucide-react"
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { okaidia } from 'react-syntax-highlighter/dist/esm/styles/prism'; // You can choose another theme
 import { Bar, BarChart, ResponsiveContainer } from "recharts"
  
 import { Button } from "@/components/ui/button"
@@ -64,6 +64,22 @@ const data = [
 
 export default function DrawerSection() {
   const [goal, setGoal] = React.useState(350)
+  const [code, setCode] = useState('');
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    // Fetch the raw file from GitHub
+    fetch('https://raw.githubusercontent.com/unaivan22/shadcn-ui-not2flat/refs/heads/master/src/components/ui/drawer.jsx')
+      .then(response => response.text())
+      .then(data => setCode(data));
+  }, []);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    });
+  };
  
   function onClick(adjustment) {
     setGoal(Math.max(200, Math.min(400, goal + adjustment)))
@@ -149,16 +165,16 @@ export default function DrawerSection() {
           <div className='flex flex-col gap-y-2 mb-12'>
             <h1 className='text-3xl font-bold'>Custom</h1>
             <p className=''>Go to components/ui/drawer.jsx or .tsx and replace with this code </p>
-            <div className='flex items-center justify-center h-full border w-full'>
-              <DrawerCodeCustomSnippet />
-            </div>
+            <Button onClick={handleCopy} className='gap-x-2 w-fit'>
+              <Copy className='w-4 h-4' /> {copied ? 'Copied!' : 'Copy to Clipboard'}
+            </Button>
+            <SyntaxHighlighter language="javascript" style={okaidia} className='whitespace-pre-wrap'>
+              {code}
+            </SyntaxHighlighter>
           </div>
           <div className='flex flex-col gap-y-2 mb-12'>
             <h1 className='text-3xl font-bold'>Usage</h1>
             <a href='https://ui.shadcn.com/docs/components/drawer' target='_blank' className='hover:underline flex gap-x-1'>Original reference from the official Shadcn/UI documentation <ArrowUpRight /> </a>
-            <div className='flex items-center justify-center h-full border w-full'>
-              <DrawerCodeUsageSnippet />
-            </div>
           </div>
         </div>
       </Layout>

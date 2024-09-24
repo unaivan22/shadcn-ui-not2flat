@@ -100,3 +100,7 @@ background-color: #fafafa;
 ::-webkit-scrollbar-thumb:hover {
   background: #fafafa; 
 }
+
+pre code {
+  font-size: .8rem !important;
+}
